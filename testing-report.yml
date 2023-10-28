@@ -44,6 +44,10 @@ status: pass
 status: pass
 
 - summary: |
+    Удаление ненужного товара из корзины 
+status: pass
+
+- summary: |
     Проверка переключения языка веб-сайта
 status: fail
 
