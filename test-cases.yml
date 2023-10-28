@@ -62,10 +62,9 @@
   prerequisites: |
      открыта главная страница веб-сайта (https://hexlet-products-store.vercel.app/)
   test-data: |
-    price from "-100" to "-50"
+    price from "-100" 
   steps:
     - вводим в окно "from" значение "-100"
-    - вводим в окном "to" значениее "-50"
   expected-result: |
     На главной странице веб-сайта отображется сообщение "Nothing found!"
 
@@ -104,13 +103,13 @@ prerequisites: |
 test-data: |
     Category "laptops"
     Brand "samsung"
-    Числовое поле "Price" from "1000" to 1300
+    Числовое поле "Price" from "1000" to "1500"
 steps:
     - В окне "Category" выбираем категорию ("laptops")
     - В списке "Brand" выбираем производителя ("samsung")
-    - В  поле "price" вводим значение from "1000" to "1300"
+    - В  поле "price" вводим значение from "1000" to "1500"
 expected-result: |
-    На экране отображена ячейка товара ("iPhone X")я 
+    На экране отображена ячейка товара ("Samsung Galaxy Book")
 
 - summary: |
     Добавление товара в корзину 
@@ -141,7 +140,7 @@ expected-result: |
     Корзина пуста 
 
 - summary: |
-    Очистка товаров из корзины 
+    Очистка корзины 
   requirement: |
     Все добавленные товар должны исчезнуть из корзины
   prerequisites: |
@@ -150,7 +149,7 @@ expected-result: |
     товар "MacBook Pro" в корзине 1 еденица
     товар "Iphone X" в корзине 1 еденица
   steps:
-    - нажать на кнопку "Cler cart" на странице в корзине 
+    - нажать на кнопку "Clear cart" на странице в корзине 
   expected-result: |
     Корзина пуста 
 
@@ -178,7 +177,7 @@ test-data: |
     -
 steps:
     - нажимаем на кнопку "Language"
-    - Выбираем иной язык
+    - Выбираем "Russian"
 expected-result: |
     Веб-сайт полностью переведен на другой язык
 
