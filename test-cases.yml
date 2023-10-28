@@ -48,7 +48,7 @@
   prerequisites: |
      открыта главная страница веб-сайта (https://hexlet-products-store.vercel.app/)
   test-data: |
-    price from "-1000000" to "2000000"
+    price from "1000000" to "2000000"
   steps:
     - вводим в окно "from" значение "1000000"
     - вводим в окном "to" значениее "2000000"
