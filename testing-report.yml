@@ -21,11 +21,11 @@ status: fail
 
 - summary: |
     Проверка фильтрации товара по производителю
-status: fail
+status: pass
 
 - summary: |
     Проверка поиска товара по производителю
-status: pass 
+status: fail 
 
 - summary: |
     Фильтрация товаров по нескольким характеристикам
