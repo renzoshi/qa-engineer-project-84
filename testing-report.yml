@@ -21,7 +21,7 @@ status: fail
 
 - summary: |
     Проверка фильтрации товара по производителю
-status: pass
+status: fail
 
 - summary: |
     Проверка поиска товара по производителю
