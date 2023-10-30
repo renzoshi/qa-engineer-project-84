@@ -40,5 +40,29 @@ expected-result: |
 actual-result: |
     Товар фильтруется с отрицательной ценой
     Перечень товаров выводится на главной странице 
-    
-    
+
+- summary: |
+    Неполный перевод веб-сайта на русский язык
+environment: |
+    Google Chrome 118.0.5993.118 (64 бит)
+    Windows 11 (64 бит)
+steps-to-reproduce: |
+    1. Зайти на главную страницу веб-сайта (https://hexlet-products-store.vercel.app/)
+    2. Выбираем в строке Language язык Russian  
+expected-result: |
+     Сайт полностью переведен на русский язык 
+actual-result: |
+    Описание товаров сохраняются на английском языке
+
+- summary: |
+    Неккоректное отображение сайта в браузере Safari
+environment: |
+    Google Chrome 118.0.5993.118 (64 бит)
+    Windows 11 (64 бит)
+steps-to-reproduce: |
+    1. Зайти на главную страницу веб-сайта (https://hexlet-products-store.vercel.app/)
+    2. Выбираем в строке Language язык Russian  
+expected-result: |
+     Сайт полностью переведен на русский язык 
+actual-result: |
+    Описание товаров сохраняются на английском языке
