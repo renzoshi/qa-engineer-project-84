@@ -1,72 +1,72 @@
 ---
 - summary: |
     Проверка входа пользователя с существующими логином и паролем
-status: fail
+  status: fail
 
 - summary: |
     Проверка фильтрации товара по категориям
-status: pass
+  status: pass
 
 - summary: |
     Проверка фильтрации товара по цене
-status: pass
+  status: pass
 
 - summary: |
     Проверка фильтрации товара по несуществующей цене
-status: pass
+  status: pass
 
 - summary: |
     Проверка фильтрации товара по отрицательной цене
-status: fail
+  status: fail
 
 - summary: |
     Проверка фильтрации товара по производителю
-status: pass
+  status: pass
 
 - summary: |
     Проверка поиска товара по производителю
-status: fail 
+  status: fail 
 
 - summary: |
     Фильтрация товаров по нескольким характеристикам
-status: pass
+  status: pass
 
 - summary: |
     Добавление товара в корзину
-status: pass
+  status: pass
 
 - summary: |
     Удаление товаров из корзины
-status: pass
+  status: pass
 
 - summary: |
     Очистка корзины
-status: pass
+  status: pass
 
 - summary: |
     Удаление ненужного товара из корзины 
-status: pass
+  status: pass
 
 - summary: |
     Проверка отображения товаров не в наличии
-status: fail
+  status: fail
 
 - summary: |
     Проверка переключения языка веб-сайта
-status: fail
+  status: fail
 
 - summary: |
     Проверка корректного отображения веб-сайта в браузере "Google Chrome"
-status: pass
+  status: pass
 
 - summary: |
     Проверка корректного отображения веб-сайта в браузере "Microsoft Edge"
-status: pass
+  status: pass
 
 - summary: |
     Проверка корректного отображения веб-сайта в браузере "Яндекс Браузер"
-status: pass
+  status: pass
 
 - summary: |
     Проверка корректного отображения веб-сайта в браузере "Safari" на Iphone13
-status: fail
+  status: fail
