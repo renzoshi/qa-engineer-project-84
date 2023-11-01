@@ -1,69 +1,69 @@
 ---
 - summary: |
     Отсутсвует возможность авторизации пользователя
-environment: |
+  environment: |
     Google Chrome 118.0.5993.118 (64 бит)
     Windows 11 (64 бит)
-steps-to-reproduce: |
+  steps-to-reproduce: |
     Зайти на главную страницу веб-сайта (https://hexlet-products-store.vercel.app/)
-expected-result: |
+  expected-result: |
     На главной странице есть кнопка авторизации или регистрации пользователя
-actual-result: |
+  actual-result: |
     На главной странице отсутсвует кнопка авторизации или регистрации пользователя
 
 - summary: |
     Фильтрация товаров по отрицательной цене
-environment: |
+  environment: |
     Google Chrome 118.0.5993.118 (64 бит)
     Windows 11 (64 бит)
-steps-to-reproduce: |
+  steps-to-reproduce: |
     1. Зайти на главную страницу веб-сайта (https://hexlet-products-store.vercel.app/)
     2. В категории Price в поле "From" ввести отрицательное значение
-expected-result: |
+  expected-result: |
     Отсутвует возможность фильтрации по отрицательной цене 
     На главной странице выводится сообщение "Nothing found!"
-actual-result: |
+  actual-result: |
     Товар фильтруется с отрицательной ценой
     Перечень товаров выводится на главной странице 
 
 - summary: |
     Отсутствует возможность найти товары производителя через окно поиска
-environment: |
+  environment: |
     Google Chrome 118.0.5993.118 (64 бит)
     Windows 11 (64 бит)
-steps-to-reproduce: |
+  steps-to-reproduce: |
     1. Зайти на главную страницу веб-сайта (https://hexlet-products-store.vercel.app/)
     2. В окно "Search ввести необходимый бренд
-expected-result: |
+  expected-result: |
     Отсутвует возможность фильтрации по отрицательной цене 
     На главной странице выводится сообщение "Nothing found!"
-actual-result: |
+  actual-result: |
     Товар фильтруется с отрицательной ценой
     Перечень товаров выводится на главной странице 
 
 - summary: |
     Неполный перевод веб-сайта на русский язык
-environment: |
+  environment: |
     Google Chrome 118.0.5993.118 (64 бит)
     Windows 11 (64 бит)
-steps-to-reproduce: |
+  steps-to-reproduce: |
     1. Зайти на главную страницу веб-сайта (https://hexlet-products-store.vercel.app/)
     2. Выбираем в строке Language язык Russian  
-expected-result: |
+  expected-result: |
      Сайт полностью переведен на русский язык 
-actual-result: |
+  actual-result: |
      Описание товаров сохраняются на английском языке
 
 - summary: |
     Неккоректное отображение сайта в браузере Safari
-environment: |
+  environment: |
     "Safari" ver. 16.5.2 
     iPhone 13 iOS 16.3.1.
-steps-to-reproduce: |
+  steps-to-reproduce: |
     1. Зайти на главную страницу веб-сайта (https://hexlet-products-store.vercel.app/) 
-expected-result: |
+  expected-result: |
      Сайт корректно адаптирован под мобильное устройство, отображается удобный интерфейс 
-actual-result: |
+  actual-result: |
     Категорию товаров выходят за границу 
     Перечень доступных товаров занимает низ экрана
     Справа пустое окно
