@@ -48,6 +48,10 @@ status: pass
 status: pass
 
 - summary: |
+    Проверка отображения товаров не в наличии
+status: fail
+
+- summary: |
     Проверка переключения языка веб-сайта
 status: fail
 
