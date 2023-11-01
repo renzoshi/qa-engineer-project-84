@@ -2,127 +2,127 @@
 test-cases:
   - summary: |
       Проверка входа пользователя с существующими логином и паролем
-  status: fail
+    status: fail
 
   - summary: |
       Проверка фильтрации товара по категориям
-  status: pass
+    status: pass
 
   - summary: |
       Проверка фильтрации товара по цене
-  status: pass
+    status: pass
 
   - summary: |
       Проверка фильтрации товара по несуществующей цене
-  status: fail
+    status: fail
 
   - summary: |
       Проверка фильтрации товара по отрицательной цене
-  status: fail
+    status: fail
 
   - summary: |
       Проверка фильтрации товара по производителю
-  status: pass
+    status: pass
 
   - summary: |
       Проверка поиска товара по производителю
-  status: pass 
+    status: pass 
 
   - summary: |
       Фильтрация товаров по нескольким характеристикам
-  status: pass
+    status: pass
 
   - summary: |
       Добавление товара в корзину
-  status: pass
+    status: pass
 
   - summary: |
       Удаление товаров из корзины
-  status: pass
+    status: pass
 
   - summary: |
       Очистка корзины
-  status: pass
+    status: pass
 
   - summary: |
       Удаление ненужного товара из корзины 
-  status: pass
+    status: pass
 
   - summary: |
       Проверка отображения товаров не в наличии
-  status: pass
+    status: pass
 
   - summary: |
       Проверка переключения языка веб-сайта
-  status: fail
+    status: fail
 
   - summary: |
       Проверка корректного отображения веб-сайта в браузере "Google Chrome"
-  status: pass
+    status: pass
 
   - summary: |
       Проверка корректного отображения веб-сайта в браузере "Microsoft Edge"
-  status: pass
+    status: pass
 
   - summary: |
       Проверка корректного отображения веб-сайта в браузере "Яндекс Браузер"
-  status: pass
+    status: pass
 
   - summary: |
       Проверка корректного отображения веб-сайта в браузере "Safari" на Iphone13
-  status: pass
+    status: pass
 
 bugreports:
   - summary: |
       Отсутсвует возможность авторизации пользователя
-  environment: |
+    environment: |
       Google Chrome 118.0.5993.118 (64 бит)
       Windows 11 (64 бит)
-  steps-to-reproduce: |
+    steps-to-reproduce: |
       Зайти на главную страницу веб-сайта (https://hexlet-products-store.vercel.app/)
-  expected-result: |
+    expected-result: |
       На главной странице есть кнопка авторизации или регистрации пользователя
-  actual-result: |
+    actual-result: |
       На главной странице отсутсвует кнопка авторизации или регистрации пользователя
 
   - summary: |
       Проверка фильтрации товара по несуществующей цене
-  environment: |
+    environment: |
       Google Chrome 118.0.5993.118 (64 бит)
       Windows 11 (64 бит)
-  steps-to-reproduce: |
+    steps-to-reproduce: |
       1. Зайти на главную страницу веб-сайта (https://hexlet-products-store.vercel.app/)
       2. В категории Price в поле "From" ввести значение "1000000"
       3. В категории Price в поле "To" ввести значение "2000000"
-  expected-result: |
+    expected-result: |
       На главной странице веб-сайта отображется сообщение "Nothing found!"
-  actual-result: |
+    actual-result: |
       На главной странице отоброжается список товаров
 
   - summary: |
       Фильтрация товаров по отрицательной цене
-  environment: |
+    environment: |
       Google Chrome 118.0.5993.118 (64 бит)
       Windows 11 (64 бит)
-  steps-to-reproduce: |
+    steps-to-reproduce: |
       1. Зайти на главную страницу веб-сайта (https://hexlet-products-store.vercel.app/)
       2. В категории Price в поле "From" ввести отрицательное значение
-  expected-result: |
+    expected-result: |
       Отсутвует возможность фильтрации по отрицательной цене 
       На главной странице выводится сообщение "Nothing found!"
-  actual-result: |
+    actual-result: |
       Товар фильтруется с отрицательной ценой
       Перечень товаров выводится на главной странице
 
   - summary: |
       Неполный перевод веб-сайта на русский язык
-  environment: |
+    environment: |
       Google Chrome 118.0.5993.118 (64 бит)
       Windows 11 (64 бит)
-  steps-to-reproduce: |
+    steps-to-reproduce: |
       1. Зайти на главную страницу веб-сайта (https://hexlet-products-store.vercel.app/)
-    2. Выбираем в строке Language язык Russian  
-  expected-result: |
-     Сайт полностью переведен на русский язык 
-  actual-result: |
-     Описание товаров сохраняются на английском языке
+      2. Выбираем в строке Language язык Russian  
+    expected-result: |
+      Сайт полностью переведен на русский язык 
+    actual-result: |
+      Описание товаров сохраняются на английском языке
