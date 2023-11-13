@@ -244,10 +244,106 @@
   prerequisites: |
     Открыта Главная страница веб-сайта в браузере "Safari" ver. 16.5.2   
   test-data: |
-    Яндекс Safari ver 16.5.2  
+    Safari ver 16.5.2  
   steps:
     - открываем браузер "Safari" на iPhone 13 
     - в адресное окно вводим адрес https://hexlet-products-store.vercel.app/cart
     - нажимаем перейти 
   expected-result: |
     Веб-сайт корректно отображается
+
+- summary: |
+    Проверка корректного отображения веб-сайта в браузере "Google Chrome"
+  requirement: |
+    Корректное отображение веб-сайта 
+  prerequisites: |
+    Открыта Главная страница веб-сайта в браузере "Google Chrome" ver. 118.0.5993.118  
+  test-data: |
+    Google Chrome ver 118.0.5993.118
+  steps:
+    - открываем браузер "Google Chrome"
+    - в адресное окно вводим адрес https://hexlet-products-store.vercel.app/cart
+    - нажимаем перейти (enter)
+  expected-result: |
+    Веб-сайт корректно отображается
+
+- summary: |
+    Проверка корректного отображения корзины веб-сайта
+  requirement: |
+    Корректное отображение корзины веб-сайта 
+  prerequisites: |
+    Открыта главная страница браузере "Google Chrome" ver. 118.0.5993.118  
+  test-data: |
+    Google Chrome ver 118.0.5993.118
+  steps:
+    - нажимаем на cart 
+  expected-result: |
+    Страница корзины корректно отображается
+
+- summary: |
+    Проверка корректного отображения корзины веб-сайта на мобильном устройстве 
+  requirement: |
+    Корректное отображение корзины веб-сайта 
+  prerequisites: |
+    Открыта главная страница браузере "Safari" ver. 16.5.2  
+  test-data: |
+     Safari ver 16.5.2  
+  steps:
+    - нажимаем на cart 
+  expected-result: |
+    Страница корзины корректно отображается
+
+- summary: | 
+    Проверка добавления нескольких одинаковых товаров в корзину
+  requirement: |
+    Несколько одинаковых товаров добавлены в корзину 
+  prerequisites: |
+    открыта главная страница веб-сайта  
+  test-data: |
+     iPhone9 - 3  
+  steps:
+    - находим iPhone 9 
+    - нажимаем add to cart - 3 раза 
+    - нажимаем cart
+  expected-result: |
+    В корзине добавлено и корректно отображается три одинаковых товара 
+
+- summary: | 
+    Проверка добавления нескольких разных товаров в корзину
+  requirement: |
+    Несколько разных товаров добавлены в корзину 
+  prerequisites: |
+    открыта главная страница веб-сайта  
+  test-data: |
+     iPhone9  - 1
+     iPhoneX -  1
+     Huawei p30 - 1
+     MacBook pro - 1
+  steps:
+    - находим iPhone 9 
+    - нажимаем add to cart 1 раз
+    - находим iPhoneX 
+    - нажимаем add to cart 1 раз
+    - находим Huawei p30 
+    - нажимаем add to cart 1 раз
+    - находим MacBook pro 
+    - нажимаем add to cart 1 раз
+    - нажимаем cart 
+  expected-result: |
+    В корзину добавлено и корректно отображается несколько одинаковых товаров   
+
+- summary: | 
+    Проверка добавления нескольких одинаковых товаров в корзину
+  requirement: |
+    Несколько одинаковых товаров добавлены в корзину 
+  prerequisites: |
+    открыта главная страница веб-сайта  
+  test-data: |
+     iPhone9 - 3  
+  steps:
+    - находим iPhone 9 
+    - нажимаем add to cart - 3 раза 
+    - нажимаем cart
+  expected-result: |
+    В корзине добавлено и корректно отображается три одинаковых товара 
+
