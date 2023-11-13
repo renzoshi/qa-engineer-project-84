@@ -30,7 +30,7 @@ test-cases:
 
   - summary: |
      Фильтрация товаров по нескольким характеристикам
-   status: pass
+    status: pass
 
   - summary: |
      Добавление товара в корзину
