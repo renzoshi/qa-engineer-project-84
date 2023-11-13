@@ -1,17 +1,5 @@
 ---
 - summary: |
-    Отсутсвует возможность авторизации пользователя
-  environment: |
-    Google Chrome 118.0.5993.118 (64 бит)
-    Windows 11 (64 бит)
-  steps-to-reproduce: |
-    Зайти на главную страницу веб-сайта (https://hexlet-products-store.vercel.app/)
-  expected-result: |
-    На главной странице есть кнопка авторизации или регистрации пользователя
-  actual-result: |
-    На главной странице отсутсвует кнопка авторизации или регистрации пользователя
-
-- summary: |
     Фильтрация товаров по отрицательной цене
   environment: |
     Google Chrome 118.0.5993.118 (64 бит)
@@ -53,6 +41,19 @@
      Описание товаров сохраняются на английском языке
 
 - summary: |
+    Неккоректное отображения иконок (флагов) в выборе языка
+  environment: |
+    Google Chrome 118.0.5993.118 (64 бит)
+    Windows 11 (64 бит)
+  steps-to-reproduce: |
+    1. Зайти на главную страницу веб-сайта (https://hexlet-products-store.vercel.app/)
+    2. Нажимаем Language
+  expected-result: |
+     Корректное отображение иконок (флагов)
+  actual-result: |
+     Иконка (флаг) English не отображается
+
+- summary: |
     Неккоректное отображение сайта в браузере Safari
   environment: |
     "Safari" ver. 16.5.2 
@@ -68,7 +69,7 @@
     Неудобный интерфейс
 
 - summary: |
-    Проверка отображения товаров не в наличии
+    Нет отображения товаров не в наличии
   environment: |
     Google Chrome 118.0.5993.118 (64 бит)
     Windows 11 (64 бит)
@@ -79,3 +80,55 @@
      Товар не в наличии отобразился на главной странице вместе с товаров в наличии 
   actual-result: |
      На главной странице отображается "Nothing found!"
+
+- summary: |
+    Нет возможности закрыть окно подтверждения заказа одним из способов
+  environment: |
+    Google Chrome 118.0.5993.118 (64 бит)
+    Windows 11 (64 бит)
+  steps-to-reproduce: |
+    1. Зайти на главную страницу веб-сайта (https://hexlet-products-store.vercel.app/)
+    2. Найти iPhone 9 
+    3. Нажать Add to cart 
+    4. Нажать Cart 
+    5. Нажать Checkout 
+    6. Нажать значок "X"
+  expected-result: |
+     Окно подтверждения заказа закрыто
+  actual-result: |
+     Окно подтверждения заказа не закрывается
+
+- summary: |
+    Неккоректное отображение корзины при заказе нескольких разных товаров
+  environment: |
+    Google Chrome 118.0.5993.118 (64 бит)
+    Windows 11 (64 бит).
+  steps-to-reproduce: |
+    1. Зайти на главную страницу веб-сайта (https://hexlet-products-store.vercel.app/) 
+    2. находим iPhone 9 
+    3. нажимаем add to cart 1 раз
+    4. находим iPhoneX 
+    5. нажимаем add to cart 1 раз
+    6. находим Huawei p30 
+    7. нажимаем add to cart 1 раз
+    8. находим MacBook pro 
+    9. нажимаем add to cart 1 раз
+    10. нажимаем cart 
+  expected-result: |
+     Сайт корректно отображает все добавленные товары в коризну
+  actual-result: |
+    Съехала верстка в отображении количества товара 
+
+- summary: |
+    Неработают хештеги
+  environment: |
+    Google Chrome 118.0.5993.118 (64 бит)
+    Windows 11 (64 бит).
+  steps-to-reproduce: |
+    1. Зайти на главную страницу веб-сайта (https://hexlet-products-store.vercel.app/) 
+    2. нажать на иконку с товаром iPhone 9
+    3. нажать на #smartphones
+  expected-result: |
+     Переход в категорию смартфонов в интернет-магазине
+  actual-result: |
+    При нажании на хештег ничего не происходит
