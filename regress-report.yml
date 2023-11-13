@@ -1,6 +1,6 @@
 ---
 test-cases:
-   - summary: |
+  - summary: |
       Проверка фильтрации товара по категориям
     status: pass
 
