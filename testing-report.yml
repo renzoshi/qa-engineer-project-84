@@ -106,3 +106,7 @@
 - summary: |
     Проверка работы хештегов 
   status: fail
+  
+- summary: |
+   Проверка запросов в DevTools 
+  status: fail
