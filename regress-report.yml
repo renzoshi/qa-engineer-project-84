@@ -108,6 +108,10 @@ test-cases:
       Проверка работы хештегов 
     status: pass
 
+  - summary: |
+     Проверка запросов в DevTools 
+    status: fail
+
 bugreports:
   - summary: |
       Некоректное отображение единичного товара 
