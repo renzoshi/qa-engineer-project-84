@@ -414,3 +414,37 @@
     - нажать на #smartphones
   expected-result: |
     переход в категорию смартфонов на веб-сайте
+
+- summary: | 
+    Проверка работы хештегов 
+  requirement: |
+    Перейти в нужную категории по хештегу  
+  prerequisites: |
+    открыта главная страница веб-сайта  
+  test-data: |
+     iPhone9   
+  steps:
+    - нажать на иконку с товаром iPhone 9
+    - нажать на #smartphones
+  expected-result: |
+    переход в категорию смартфонов на веб-сайте
+
+- summary: | 
+    Проверка запросов в DevTools 
+  requirement: |
+    Отсутствие ошибок  
+  prerequisites: |
+    открыта главная страница веб-сайта  
+  test-data: |
+     DevTools
+     Google Chrome ver 118.0.5993.118
+  steps:
+    - кликнуть правой кнопкой мыши "посмотреть код" 
+    - выбрать в DevTools вкладку Console
+    - найти на веб-сайте товар iPhone9 
+    - нажать Add to cart 
+    - нажать cart 
+    - нажать Checkout
+    - проверить консоль на наличие ошибок
+  expected-result: |
+    отсутствие ошибок при запросе
