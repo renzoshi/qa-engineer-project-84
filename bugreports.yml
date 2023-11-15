@@ -132,3 +132,22 @@
      Переход в категорию смартфонов в интернет-магазине
   actual-result: |
     При нажании на хештег ничего не происходит
+    
+- summary: |
+    Ошибки при запросе в DevTools
+  environment: |
+    Google Chrome 118.0.5993.118 (64 бит)
+    Windows 11 (64 бит).
+  steps-to-reproduce: |
+    1. Зайти на главную страницу веб-сайта (https://hexlet-products-store.vercel.app/) 
+    2. кликнуть правой кнопкой мыши "посмотреть код
+    3. выбрать в DevTools вкладку Console
+    4. найти на веб-сайте товар iPhone9
+    5. нажать Add to cart
+    6. нажать cart 
+    7. нажать Checkout
+    8. проверить консоль на наличие ошибок
+  expected-result: |
+     отсутствие ошибок при запросе 
+  actual-result: |
+    ошибка 500 (Internal Server Error)
